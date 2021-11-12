@@ -46,6 +46,8 @@ Para cada PR realize esse processo.
 
 Nos exercícios de hoje, será usada uma API que retorna cartas do jogo de Magic: The Gathering. Então, se prepare, jovem, pois neste dia, uma carta será comprada do Grimório e outras serão escolhidas como as favoritas. Está com mana suficiente para esta aventura?
 
+Mas, antes de se aventurar nos exercícios, saiba que você encontrará imports no caminho. Imports são arquivos chamados dentro de outros arquivos e fazem parte do dia a dia na carreira de desenvolvimento. Mas para que isso? Em algum momento, você pode precisar usar uma função ou variável que está declarada em outro arquivo, e, para resolver esse problema, é só importar esse arquivo dentro do arquivo que você está desenvolvendo. Nada complicado, certo? Hoje será necessário fazer alguns imports para a realização do exercício, mas fique de boas porque os arquivos já vão vir importados para você!
+
 ## Exercício 1
 
 ### Antes de começar
