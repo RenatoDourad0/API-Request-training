@@ -56,7 +56,6 @@ Mas, antes de se aventurar nos exercícios, saiba que você encontrará imports 
 * Todas as funções já estão impĺementadas, você precisará se preocupar apenas em testá-las.
 * Não se preocupe em entender a estrutura da função `fetchSimulator`, você aprenderá a implementar este tipo de função futuramente no curso.
 * Não se esqueça de atualizar o número de `expect.assertions`, a cada `expect` que você implementar em seus testes.
-* Lembre-se de criar um `it` para cada teste.
 
 **Dica de ouro**: leia e entenda cada parte da implementação da função `getMagicCard` que está no arquivo `src/magic.js`. Isso te ajudará a implementar os testes.
 
@@ -93,7 +92,6 @@ VII - Implemente um teste que verifique se, ao chamar a função `getMagicCard` 
 
 **Dica de ouro**: leia e entenda cada parte da implementação da função `getMagicCard` que está no arquivo `src/magic.js.` Isso te ajudará a implementar os testes.
 
-
 ### Agora mão na massa
 
 Agora temos um arquivo com algumas das cartas preferidas do nosso jogador. Você pode verificar a sua estrutura no arquivo `data/favoriteCards.js`. Utilizaremos este arquivo para os próximos passos.
@@ -106,9 +104,9 @@ Para os próximos exercícios descomente o teste dentro do escopo do segundo `it
 
 III - Após descomentar o teste dentro do segundo `it`, rode os testes. 
 
-Você vai perceber que o teste falhou. Consegue entender porque ele falha? Isso mesmo, a função `getMagicCard` modificou o arquivo `favoriteCards` no escopo do `it` anterior. Desta maneira, para o Jest, o array `favoriteCards` não possui quatro cards, mas sim, seis.
+Você vai perceber que o teste falhou. Consegue entender porque ele falha? Isso mesmo, a função `getMagicCard` modificou o arquivo `favoriteCards` no escopo do `it` anterior. Desta maneira, para o Jest, o array `favoriteCards` não possui quatro cards, mas sim, cinco.
 
-IV - Utilizando a função `afterEach` crie uma lógica capaz de restaurar o array `favoriteCards` que faça com que o teste passe.
+IV - Implemente a função `retrievesFavoriteCards` com uma lógica capaz de restaurar o array `favoriteCards`, depois chame esta função dentro da função `afterEach` para os testes poderem passar.
 
 ## Bônus
 
