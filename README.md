@@ -46,7 +46,7 @@ Para cada PR realize esse processo.
 
 Nos exercícios de hoje, será usada uma API que retorna cartas do jogo de Magic: The Gathering. Então, se prepare, jovem, pois neste dia, uma carta será comprada do Grimório e outras serão escolhidas como as favoritas. Está com mana suficiente para esta aventura?
 
-Mas, antes de se aventurar nos exercícios, saiba que você encontrará imports no caminho. Imports são arquivos chamados dentro de outros arquivos e fazem parte do dia a dia na carreira de desenvolvimento. Mas para que isso? Em algum momento, você pode precisar usar uma função ou variável que está declarada em outro arquivo, e, para resolver esse problema, é só importar esse arquivo dentro do arquivo que você está desenvolvendo. Nada complicado, certo? Hoje será necessário fazer alguns imports para a realização do exercício, mas fique de boas porque os arquivos já vão vir importados para você!
+Mas, antes de se aventurar nos exercícios, saiba que você encontrará imports no caminho. Imports são arquivos chamados dentro de outros arquivos e fazem parte do dia a dia de uma pessoa desenvolvedora. Em algum momento, você pode precisar usar uma função ou variável que está declarada em outro arquivo, e, para resolver esse problema, é só importar esse arquivo ou apenas a função/variável desejada dentro do arquivo que você está desenvolvendo. Nada complicado, certo? Hoje será necessário fazer alguns imports para a realização do exercício, mas não tenha medo, pois os arquivos já vão vir importados para você!
 
 ## Exercício 1
 
@@ -54,9 +54,9 @@ Mas, antes de se aventurar nos exercícios, saiba que você encontrará imports 
 
 * Confirme que você está na branch `exercise-one`, se não estiver, execute os passos descritos no Readme antes de prosseguir.
 * Todas as funções já estão impĺementadas, você precisará se preocupar apenas em testá-las. 
-* A função `trybeSimulator` já está pronta e disponível dentro do arquivo `magic.test.js`, onde você implementará seus testes. Mas **atenção**, você **NÃO** precisará modificá-la.
-* Não se preocupe em entender a estrutura da função `trybeSimulator`, você aprenderá a implementar este tipo de função futuramente no curso.
+* Não se preocupe em entender a estrutura da função `fetchSimulator`, você aprenderá a implementar este tipo de função futuramente no curso.
 * Não se esqueça de atualizar o número de `expect.assertions`, a cada `expect` que você implementar em seus testes.
+* Lembre-se de criar um `it` para cada teste.
 
 **Dica de ouro**: leia e entenda cada parte da implementação da função `getMagicCard` que está no arquivo `src/magic.js.` Isso te ajudará a implementar os testes.
 
@@ -64,18 +64,21 @@ Mas, antes de se aventurar nos exercícios, saiba que você encontrará imports 
 
 I - Abra o arquivo `tests/magic.test.js`. Nele você encontrará a estrutura inicial dos testes ja montada. Essa estrutura no entanto está incompleta e precisa de ajustes para que a sintaxe do `async/await` seja aplicada de forma correta. Implemente o que falta para que a sintaxe do `async/await` esteja completa.
 
-II - Implemente um teste que verifique se o retorno da função `getMagicCardSimulator` é igual ao objeto `expected`.
+II - Implemente um teste que verifique se `getMagicCard` é uma função.
+
+III - Implemente um teste que verifique se a propriedade `name` possui valor `Ancestor's Chosen`.
+
+IV - Implemente um teste que verifique se, ao chamar a função `getMagicCard` com o argumento "**130550**", a função *fetch* foi chamada.
+
+V - Implemente um teste que verifique se, ao chamar a função `getMagicCard` com o argumento "**130550**", a função *fetch* foi chamada com o endpoint "https://api.magicthegathering.io/v1/cards/130550".
+
+VI - Implemente um teste que verifique se o retorno da função `getMagicCard` é igual ao objeto `card`.
+
 ***spoiler-alert***: você pode desestruturar o objeto response e obter diretamente suas propriedades.
 
-III - Implemente um teste que verifique se a propriedade `types` é do tipo `Array`.
+VII - Implemente um teste que verifique se, ao chamar a função `getMagicCard` sem argumento, retorna um erro com a mensagem: "You must provide an url".
 
-IV - Implemente um teste que verifique se a propriedade `subtypes` possui `length === 2`.
-
-V - Implemente um teste que verifique se a propriedade `rarity` possui valor `Uncommon`.
-
-VI - Implemente um teste que verifique se a propriedade `name` possui valor `Ancestor's Chosen`.
-
-VII - Implemente um teste que verifique se a propriedade `manaCost` possui valor `{5}{W}{W}`.
+***DICA***: Para comparar com o objeto de erro retornado da API, você pode usar o `new Error ('mensagem esperada aqui')`.
 
 ---
 
