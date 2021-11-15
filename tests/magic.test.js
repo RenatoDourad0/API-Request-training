@@ -12,14 +12,12 @@ describe(' Testa a função getMagicCard', () => {
     await getMagicCard('130553');
 
     // implemente seus testes aqui
-
   });
 
   it('Deve retornar favoriteCards contendo apenas os cards favoritos iniciais', () => {
     // expect.assertions();
-
     // expect(favoriteCards).toHaveLength(4);
-    // implemente seus testes aqui
 
+    // implemente seus testes aqui
   });
 });
