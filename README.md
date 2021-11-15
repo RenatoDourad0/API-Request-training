@@ -53,12 +53,12 @@ Mas, antes de se aventurar nos exercícios, saiba que você encontrará imports 
 ### Antes de começar
 
 * Confirme que você está na branch `exercise-one`, se não estiver, execute os passos descritos no Readme antes de prosseguir.
-* Todas as funções já estão impĺementadas, você precisará se preocupar apenas em testá-las. 
+* Todas as funções já estão impĺementadas, você precisará se preocupar apenas em testá-las.
 * Não se preocupe em entender a estrutura da função `fetchSimulator`, você aprenderá a implementar este tipo de função futuramente no curso.
 * Não se esqueça de atualizar o número de `expect.assertions`, a cada `expect` que você implementar em seus testes.
 * Lembre-se de criar um `it` para cada teste.
 
-**Dica de ouro**: leia e entenda cada parte da implementação da função `getMagicCard` que está no arquivo `src/magic.js.` Isso te ajudará a implementar os testes.
+**Dica de ouro**: leia e entenda cada parte da implementação da função `getMagicCard` que está no arquivo `src/magic.js`. Isso te ajudará a implementar os testes.
 
 ### Agora mão na massa
 
@@ -78,7 +78,7 @@ VI - Implemente um teste que verifique se o retorno da função `getMagicCard` �
 
 VII - Implemente um teste que verifique se, ao chamar a função `getMagicCard` sem argumento, retorna um erro com a mensagem: "You must provide an url".
 
-***DICA***: Para comparar com o objeto de erro retornado da API, você pode usar o `new Error ('mensagem esperada aqui')`.
+***Dica***: Para comparar com o objeto de erro retornado da API, você pode usar o `new Error ('mensagem esperada aqui')`.
 
 ---
 
