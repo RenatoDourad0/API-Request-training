@@ -1,5 +1,5 @@
 const fetchSimulator = require('../simulator/fetchSimulator');
-const { getMagicCard } = require('../src/magic.js');
+const { getMagicCard } = require('../src/magic');
 const { card } = require('../simulator/card');
 
 window.fetch = jest.fn(fetchSimulator);
