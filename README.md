@@ -59,6 +59,17 @@ Mas, antes de se aventurar nos exercícios, saiba que você encontrará imports 
 
 **Dica de ouro**: leia e entenda cada parte da implementação da função `getMagicCard` que está no arquivo `src/magic.js`. Isso te ajudará a implementar os testes.
 
+**Outra dica de ouro**: a função `getMagicCard` com o argumento que vamos usar durante esse exercício, "**130550**", vai retornar o seguinte objeto:
+```javascript
+{
+  name: "Ancestor's Chosen",
+  manaCost: "{5}{W}{W}",
+  types: [ "Creature" ],
+  subtypes: [ "Human", "Cleric" ],
+  rarity: "Uncommon",
+}
+```
+
 ### Agora mão na massa
 
 I - Abra o arquivo `tests/magic.test.js`. Nele você encontrará a estrutura inicial dos testes ja montada. Essa estrutura no entanto está incompleta e precisa de ajustes para que a sintaxe do `async/await` seja aplicada de forma correta. Implemente o que falta para que a sintaxe do `async/await` esteja completa.
