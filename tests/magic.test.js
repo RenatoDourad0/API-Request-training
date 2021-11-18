@@ -6,7 +6,8 @@ jest.mock('node-fetch');
 fetch.mockImplementation(fetchSimulator);
 
 describe('Testa a função getMagicCard', () => {
-  it('É uma função', async () => {
+  it('Deve possuir a propriedade name com o valor Ancestor\'s Chosen', () => {
+    const response = getMagicCard('130550');
     // implemente seus testes aqui
   });
 });
