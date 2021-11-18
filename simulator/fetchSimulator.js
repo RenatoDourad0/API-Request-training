@@ -7,8 +7,11 @@ const ENDPOINT = {
 const TIME_IN_MILLISECONDS = 200;
 
 const fetchSimulator = (url) => {
-  if (typeof url === undefined || url.endsWith('undefined')) {
-    return Promise.reject(new Error('You must provide an url'));
+  const splitUrl = url.split('/');
+  const checkIdUrl = Number(splitUrl[splitUrl.length - 1]);
+
+  if (typeof url === undefined || url.endsWith('undefined') || !checkIdUrl) {
+    return Promise.reject(new Error('Id is not found!'));
   }
 
   const validUrl = Object.values(ENDPOINT).includes(url);
