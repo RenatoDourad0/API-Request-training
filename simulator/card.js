@@ -6,6 +6,6 @@ const cardInfo = {
 		subtypes: [ "Human", "Cleric" ],
 		rarity: "Uncommon",
 	},
-}
+};
 
 module.exports = cardInfo;

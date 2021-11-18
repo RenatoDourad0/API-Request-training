@@ -1,8 +1,6 @@
 const cardInfo = require('./card');
 
-const ENDPOINT = {
-  CARD: 'https://api.magicthegathering.io/v1/cards/130550',
-};
+const ENDPOINT = 'https://api.magicthegathering.io/v1/cards/130550';
 
 const TIME_IN_MILLISECONDS = 200;
 
@@ -14,14 +12,14 @@ const fetchSimulator = (url) => {
     return Promise.reject(new Error('Id is not found!'));
   }
 
-  const validUrl = Object.values(ENDPOINT).includes(url);
+  const validUrl = ENDPOINT === url ? true : false;
 
   return Promise.resolve({
     status: validUrl ? 200 : 400,
     ok: validUrl,
     json: () => new Promise((resolve) => {
       setTimeout(() => {
-        if (url === ENDPOINT.CARD) {
+        if (url === ENDPOINT) {
           return resolve(cardInfo);
         }
     
@@ -29,6 +27,9 @@ const fetchSimulator = (url) => {
       }, TIME_IN_MILLISECONDS);
     }),
   });
-}
+};
+
+window.fetch = jest.fn(fetchSimulator);
+afterEach(jest.clearAllMocks);
 
 module.exports = fetchSimulator;
