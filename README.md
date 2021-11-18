@@ -63,9 +63,9 @@ Mas, antes de se aventurar nos exercícios, saiba que você encontrará imports 
 
 I - Abra o arquivo `tests/magic.test.js`. Nele você encontrará a estrutura inicial dos testes ja montada. Essa estrutura no entanto está incompleta e precisa de ajustes para que a sintaxe do `async/await` seja aplicada de forma correta. Implemente o que falta para que a sintaxe do `async/await` esteja completa.
 
-II - Implemente um teste que verifique se `getMagicCard` é uma função.
+II - Implemente um teste que verifique se a propriedade `name` possui valor `Ancestor's Chosen`.
 
-III - Implemente um teste que verifique se a propriedade `name` possui valor `Ancestor's Chosen`.
+III - Implemente um teste que verifique se `getMagicCard` é uma função.
 
 IV - Implemente um teste que verifique se, ao chamar a função `getMagicCard` com o argumento "**130550**", a função *fetch* foi chamada.
 
