@@ -75,7 +75,7 @@ VI - Implemente um teste que verifique se o retorno da função `getMagicCard` �
 
 ***spoiler-alert***: você pode desestruturar o objeto response e obter diretamente suas propriedades.
 
-VII - Implemente um teste que verifique se, ao chamar a função `getMagicCard` sem argumento, retorna um erro com a mensagem: "You must provide an url".
+VII - Implemente um teste que verifique se, ao chamar a função `getMagicCard` com o argumento `'idDesconhecido'`, retorna um erro com a mensagem: "Id is not found!".
 
 ***Dica***: Para comparar com o objeto de erro retornado da API, você pode usar o `new Error ('mensagem esperada aqui')`.
 
@@ -87,16 +87,16 @@ VII - Implemente um teste que verifique se, ao chamar a função `getMagicCard` 
 
 * Confirme que você está na branch `exercise-two`, se não estiver, execute os passos descritos no Readme antes de prosseguir.
 * Dentro da pasta `data`, você encontrará o arquivo `favoriteCards`, leia e compreenda sua estrutura para realizar os exercícios.
-* A função `getMagicCard` sofreu alterações e agora além de realizar a chamada a API, ela também modifica o arquivo favoriteCards, adicionando um novo card a cada execução.
+* A função `saveFavoriteMagicCard`, além de realizar a chamada a API, ela também modifica o arquivo `favoriteCards`, adicionando um novo card a cada execução.
 * Não se esqueça de atualizar o número de `expect.assertions`, a cada `expect` que você implementar em seus testes.
 
-**Dica de ouro**: leia e entenda cada parte da implementação da função `getMagicCard` que está no arquivo `src/magic.js.` Isso te ajudará a implementar os testes.
+**Dica de ouro**: leia e entenda cada parte da implementação da função `saveFavoriteMagicCard` que está no arquivo `src/magic.js.` Isso te ajudará a implementar os testes.
 
 ### Agora mão na massa
 
 Agora temos um arquivo com algumas das cartas preferidas do nosso jogador. Você pode verificar a sua estrutura no arquivo `data/favoriteCards.js`. Utilizaremos este arquivo para os próximos passos.
 
-I - Implemente um teste que verifique que após a execução da função `getMagicCard`, `favoriteCards` passa a possuir `length === 5`.
+I - Implemente um teste que verifique que após a execução da função `saveFavoriteMagicCard`, `favoriteCards` passa a possuir `length === 5`.
 
 II - Implemente um teste que verifique que na última posição do array `favoriteCards` existe um card com o a propriedade `name` e valor "Beacon of Immortality".
 
@@ -104,9 +104,9 @@ Para os próximos exercícios descomente o teste dentro do escopo do segundo `it
 
 III - Após descomentar o teste dentro do segundo `it`, rode os testes. 
 
-Você vai perceber que o teste falhou. Consegue entender porque ele falha? Isso mesmo, a função `getMagicCard` modificou o arquivo `favoriteCards` no escopo do `it` anterior. Desta maneira, para o Jest, o array `favoriteCards` não possui quatro cards, mas sim, cinco.
+Você vai perceber que o teste falhou. Consegue entender porque ele falha? Isso mesmo, a função `saveFavoriteMagicCard` modificou o arquivo `favoriteCards` no escopo do `it` anterior. Desta maneira, para o Jest, o array `favoriteCards` não possui quatro cards, mas sim, cinco.
 
-IV - Implemente a função `retrievesFavoriteCards` com uma lógica capaz de restaurar o array `favoriteCards`, depois chame esta função dentro da função `afterEach` para os testes poderem passar.
+IV - Implemente a função `retrievesFavoriteCards` com uma lógica capaz de restaurar o array `favoriteCards`, depois chame essa função dentro da função `afterEach` para os testes poderem passar.
 
 ## Bônus
 
