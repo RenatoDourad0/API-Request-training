@@ -1,15 +1,14 @@
-const { getMagicCard } = require('../src/magic.js');
+const { saveFavoriteMagicCard } = require('../src/magic.js');
 const favoriteCards = require('../data/favoriteCards.js');
 
 const retrievesFavoriteCards = () => {
   // implemente sua função aqui
 }
 
-describe(' Testa a função getMagicCard', () => { 
-
+describe(' Testa a função saveFavoriteMagicCard', () => {
   it('Testa se um novo card é adicionado a cada execução', async () => {
     expect.assertions();
-    await getMagicCard('130553');
+    await saveFavoriteMagicCard('130553');
 
     // implemente seus testes aqui
   });

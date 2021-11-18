@@ -3,7 +3,7 @@ const favoriteCards = require('../data/favoriteCards.js')
 
 const getMagicCardUrl = (cardId) => `https://api.magicthegathering.io/v1/cards/${cardId}`;
 
-const getMagicCard = async (cardId) => {
+const saveFavoriteMagicCard = async (cardId) => {
   try {
     const url = getMagicCardUrl(cardId);
     const response = await fetch(url);
@@ -24,5 +24,5 @@ const getMagicCard = async (cardId) => {
 };
 
 module.exports = {
-  getMagicCard,
+  saveFavoriteMagicCard,
 };
