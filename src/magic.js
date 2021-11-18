@@ -9,7 +9,7 @@ const getMagicCard = async (cardId) => {
     const response = await fetch(url);
     const json = await response.json();
 
-    const { name, manaCost, types, subtypes, rarity } = json.card;
+    const { name, manaCost, types, subtypes, rarity } = data.card;
 
     favoriteCards.push({
       name,
