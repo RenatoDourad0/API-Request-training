@@ -98,15 +98,17 @@ Agora temos um arquivo com algumas das cartas preferidas do nosso jogador. Você
 
 I - Implemente um teste que verifique que após a execução da função `saveFavoriteMagicCard`, `favoriteCards` passa a possuir `length === 5`.
 
-II - Implemente um teste que verifique que na última posição do array `favoriteCards` existe um card com o a propriedade `name` e valor "Beacon of Immortality".
+II - Dentro do mesmo it, implemente um teste que verifique que na última posição do array `favoriteCards` existe um card com o a propriedade `name` e valor "Beacon of Immortality".
 
-Para os próximos exercícios descomente o teste dentro do escopo do segundo `it`.
+III - Ainda no mesmo it, chame a função `saveFavoriteMagicCard` com o argumento "**130554**" e verifique se `favoriteCards` passa a possuir `length === 6`.
 
-III - Após descomentar o teste dentro do segundo `it`, rode os testes. 
+Para os próximos exercícios, descomente o teste dentro do escopo do segundo it.
 
-Você vai perceber que o teste falhou. Consegue entender porque ele falha? Isso mesmo, a função `saveFavoriteMagicCard` modificou o arquivo `favoriteCards` no escopo do `it` anterior. Desta maneira, para o Jest, o array `favoriteCards` não possui quatro cards, mas sim, cinco.
+IV - Após descomentar o teste dentro do segundo it, rode os testes. 
 
-IV - Implemente a função `retrievesFavoriteCards` com uma lógica capaz de restaurar o array `favoriteCards`, depois chame essa função dentro da função `afterEach` para os testes poderem passar.
+Você vai perceber que o teste falhou. Consegue entender porque ele falha? Isso mesmo, a função `saveFavoriteMagicCard` modificou o arquivo `favoriteCards` no escopo do it anterior. Desta maneira, para o Jest, o array `favoriteCards` não possui quatro cards, mas sim, cinco.
+
+V - Implemente a função `retrievesFavoriteCards` com uma lógica capaz de restaurar o array `favoriteCards`, depois chame essa função dentro da função `afterEach` para os testes poderem passar.
 
 ## Bônus
 
