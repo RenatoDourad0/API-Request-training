@@ -61,7 +61,8 @@ Mas, antes de se aventurar nos exercícios, saiba que você encontrará imports 
 
 ### Agora mão na massa
 
-I - Abra o arquivo `tests/magic.test.js`. Nele você encontrará a estrutura inicial dos testes ja montada. Essa estrutura no entanto está incompleta e precisa de ajustes para que a sintaxe do `async/await` seja aplicada de forma correta. Implemente o que falta para que a sintaxe do `async/await` esteja completa.
+I - Complete a sintaxe do `async/await`.
+Abra o arquivo `tests/magic.test.js`, nele você encontrará a estrutura inicial dos testes já montada. Essa estrutura no entanto está incompleta e precisa de ajustes para funcionar corretamente.
 
 II - Implemente um teste que verifique se `getMagicCard` é uma função.
 
