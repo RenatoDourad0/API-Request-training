@@ -86,7 +86,7 @@ Mas, antes de se aventurar nos exercícios, saiba que você encontrará imports 
 
 ***spoiler-alert***: você pode desestruturar o objeto response e obter diretamente suas propriedades.
 
-7 - Implemente um teste que verifique se, ao chamar a função `getMagicCard` com o argumento `'idDesconhecido'`, retorna um erro com a mensagem: "Id is not found!".
+7 - Implemente um teste que verifica se, ao chamar a função `getMagicCard` com o argumento `'idDesconhecido'`, retorna um erro com a mensagem: "Id is not found!".
 
 ***Dica***: Para comparar com o objeto de erro retornado da API, você pode usar o `new Error ('mensagem esperada aqui')`.
 
