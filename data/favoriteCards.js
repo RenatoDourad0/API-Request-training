@@ -4,28 +4,28 @@ const favoriteCards = [
     manaCost: '{5}{W}{W}',
     types: [ 'Creature' ],
     subtypes: [ 'Human', 'Cleric' ],
-    rarity: 'Uncommon'
+    rarity: 'Uncommon',
   },
   {
     name: "Angel of Mercy",
     manaCost: '{4}{W}',
     types: [ 'Creature' ],
     subtypes: ['Angel'],
-    rarity: 'Uncommon'
+    rarity: 'Uncommon',
   },
   {
     name: "Aven Cloudchaser",
     manaCost: '{3}{W}',
     types: [ 'Creature' ],
     subtypes: [ 'Bird', 'Soldier' ],
-    rarity: 'Common'
+    rarity: 'Common',
   },
   {
     name: "Ballista Squad",
     manaCost: '{3}{W}',
     types: [ 'Creature' ],
     subtypes: [ 'Human', 'Rebel' ],
-    rarity: 'Uncommon'
+    rarity: 'Uncommon',
   },
 ];
 
