@@ -54,7 +54,7 @@ Mas, antes de se aventurar nos exercícios, saiba que você encontrará imports 
 
 * Confirme que você está na branch `exercise-one`, se não estiver, execute os passos descritos no Readme antes de prosseguir.
 * Todas as funções já estão impĺementadas, você precisará se preocupar apenas em testá-las.
-* Vamos usar o `fetchSimulator` como uma biblioteca Javascript, por tanto não se preocupe em entender a estrutura dessa função, você aprenderá a implementar esse tipo de função futuramente no curso.
+* Vamos usar o `fetchSimulator` como uma biblioteca Javascript, portanto, não se preocupe em entender a estrutura dessa função, você aprenderá a implementar esse tipo de função futuramente no curso.
 * Não se esqueça de atualizar o número de `expect.assertions`, a cada `expect` que você implementar em seus testes.
 
 **Dica de ouro**: leia e entenda cada parte da implementação da função `getMagicCard` que está no arquivo `src/magic.js`. Isso te ajudará a implementar os testes.
