@@ -1,20 +1,10 @@
-const magic = require('../src/magic.js');
-const { trybeSimulator } = require('../simulator/simulator.js');
+require('../simulator/fetchSimulator');
+const { getMagicCard } = require('../src/magic.js');
+const { card } = require('../simulator/card');
 
-const expected = {
-  name: "Ancestor's Chosen",
-  manaCost: '{5}{W}{W}',
-  types: [ 'Creature' ],
-  subtypes: [ 'Human', 'Cleric' ],
-  rarity: 'Uncommon'
-};
-
-describe(' Testa a função getMagicCard', () => {
-  it('Deve retornar um objeto com as propriedades esperadas', () => {
-    const getMagicCardSimulator = trybeSimulator(magic, 'getMagicCard');
-    await getMagicCardSimulator('130550');
-
-    // implemente seus testes aqui    
-   
+describe('Testa a função getMagicCard', () => {
+  it('Deve possuir a propriedade name com o valor Ancestor\'s Chosen', () => {
+    const response = getMagicCard('130550');
+    // implemente seus testes aqui
   });
 });
