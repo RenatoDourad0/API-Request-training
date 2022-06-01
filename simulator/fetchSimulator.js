@@ -29,7 +29,7 @@ const fetchSimulator = (url) => {
   });
 };
 
-window.fetch = jest.fn(fetchSimulator);
+global.fetch = jest.fn(fetchSimulator);
 afterEach(jest.clearAllMocks);
 
 module.exports = fetchSimulator;
