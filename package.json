@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "directories": {
-    "test": "tests"
+    "test": "Jest"
   },
   "dependencies": {
     "node-fetch": "^2.6.1"

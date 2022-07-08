@@ -13,7 +13,7 @@ const getMagicCard = async (cardId) => {
       manaCost,
       types,
       subtypes,
-      rarity,
+      rarity
     };
   } catch (error) {
     return error;
@@ -21,5 +21,5 @@ const getMagicCard = async (cardId) => {
 };
 
 module.exports = {
-  getMagicCard,
+  getMagicCard
 };
