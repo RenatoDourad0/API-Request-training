@@ -1,0 +1,109 @@
+#header {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+#header a {
+  text-decoration: none;
+  color: black;
+  background-color: yellow;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 2px;
+}
+
+#search {
+  text-align: center;
+  height: 15vh;
+  margin-top: 2vh;
+  background-color: rgb(85, 85, 170);
+  background-image: linear-gradient(to bottom right, rgb(85, 85, 170), rgb(139, 139, 213));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-input {
+  width: 30vw;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 1px 1px 2px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+#search-button {
+  display: none;
+}
+
+/* main {
+  height: 50vh;
+  background-image: linear-gradient(to bottom left, rgb(139, 139, 213), rgb(85, 85, 170));
+} */
+/* #data {
+  height: 50vh;
+  background-color: rgb(85, 85, 170);
+} */
+
+#bootstrapCarrousel {
+  width: 100vw;
+  height: 30vh;
+  margin: auto;
+  background-color: beige;
+  display: flex;
+}
+
+#carouselControls {
+  max-width: 50vw;
+  max-height: 50vh;
+  min-width: 200px;
+  margin: auto;
+}
+
+#data {
+height: 100%;
+background-color: beige;
+}
+#information {
+  background-color: beige;
+  padding-bottom: 10vh;
+}
+
+#information table {
+  width: 90%;
+  margin: auto;
+}
+
+#information table td {
+  border: 1px solid black;
+  text-align: center;
+  min-width: 80px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  height: fit-content;
+  width: 100%;
+  background-image: linear-gradient(to bottom left, rgb(139, 139, 213), rgb(85, 85, 170));
+  text-align: center;
+}
+
+#footer h4, a {
+  display: inline;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+#footer a {
+  text-decoration: underline;
+}
+
+.displayNone {
+  display: none;
+}

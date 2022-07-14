@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="backgroundOpacity">
+  </div>
+  <header>
+    <h2 class="bigger">Search for the latest foreign exchange reference rates and convert any amount from one currency to another!</h2>
+    <br>
+    <h3>The currency should be entered with its 3 letter digit. E.g: USD, EUR.</h3>
+  </header>
+  <section id="currency">
+    <section class="searchContainer">
+      <form action="" method="get" id="searchForm">
+        <label for="search">
+          <input type="search" name="search" id="searchInput" placeholder="Search for currency rates &#xF002;" style="font-family:Arial, FontAwesome">
+          <button type="submit" class="searchSubmitButton" >Search</button>
+        </label>
+      </form>
+    </section>
+    <div id="baseCurrency">
+      <h4 id='baseCurrencyText'class="displayNone">Base currency: 1</h4>
+      <h4 id="curentSearch"></h4>
+    </div>
+    <section class="currencyContainer">
+    </section>
+    <button class="displayNone" id="clearButton">Clear</button>
+  </section>
+  <section id="convertion">
+    <form action="" method="get" id="convertionForm">
+      <span>Convert</span>
+      <input type="search" name="convertionAmount" id="convertionAmount" placeholder="Amount">
+      <span>from</span>
+      <input type="search" name="convertionCurrencyInput" id="convertionCurrencyInput" placeholder="Base currency">
+      <span>to</span>
+      <input type="search" name="convertionCurrencyOutput" id="convertionCurrencyOutput" placeholder="Desired currency">
+      <button type="submit" class="searchSubmitButton">Convert</button>
+    </form>
+    <div id="convertionAswr" class="displayNone">
+      <span id="convertionAmountAswr"></span>
+      <span id="convertionCurrencyInputAswr"></span>
+      <span id='convertionText'class="displayNone">is equal to</span>
+      <span id="aswr"></span>
+      <span id="convertionCurrencyOutputAswr"></span>
+      <br>
+      <button class="displayNone" id="convertionClearButton">Clear</button>
+    </div>
+  </section>
+  <footer>
+    <span class="bigger">Learning project developed by <a href="https://github.com/RenatoDourad0">Renato Campos</a> with informations from the <a href="https://exchangerate.host/">exchangeRate</a> API.</span>
+    <span>Based on vanilla Js, HTML and CSS. With focus on fetch API requests, DOM manipulation, responsive CSS and flexbox.</span>
+    <h4><a href="money_backgorun">Source code</a></h4>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>

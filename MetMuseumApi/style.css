@@ -1,0 +1,13 @@
+#container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  height: 500px;
+}
+.card {
+  background-color: bisque;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px;
+  margin: 30px;
+  padding: 10px
+}
